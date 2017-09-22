@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+/* ----------------------------------------
+Header / Footer
+------------------------------------------- */
+header {
+  text-align: center;
+  width: 100%;
+  background-image: url(../images/firework.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 20px 200px 20px;
+}
+
+.nav-info {
+  position: fixed;
+  text-align: right;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  padding: 25px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.nav-fixed  {
+  box-shadow: 0 0 11px rgba(0, 0, 0, .1);
+  background-color: #fff;
+  z-index: 100;
+}
+
+.nav-info img {
+  max-width: 150px;
+  width: 100%;
+}
+
+.nav-fixed .white-logo {
+  display: none;
+}
+
+.nav-fixed .dark-logo {
+  display: none;
+}
+
+.main-nav {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.main-nav a {
+  color: #FFF;
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  /*color: #221A45;*/
+}
+
+.main-nav a:hover {
+  border-bottom: 2px solid #66DECA;
+  margin: 0px 10px 0px 10px;
+}
+
+footer {
+  background-color: #221A45;
+  padding: 20px 25px 20px 25px;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer i {
+  float: right;
+  color: #fff;
+  padding: 20px 10px 20px 10px;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #FFF;
+  transition: all .4s ease-in-out;
+}
+
+.scrolled a {
+  color: #221A45;
+}
+
+/* ----------------------------------------
+TYPOGRAPHY
+------------------------------------------- */
+h1 {
+  font-weight: 400;
+  font-size: 70px;
+  color: #FFF;
+  text-align: center;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 50px;
+  color: #F87B5E;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #7E47FF;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #7E47FF;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #221A45;
+}
+
+p a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #221A45;
+}
+
+ul {
+  color: #7E47FF;
+}
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+
+.header-button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background-color: #66DECA;
+  color: #FFF;
+  border: 2px solid #66DECA;
+  border-radius: 4px;
+  padding: 8px 24px;
+  margin: 5px 0 0 10px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 24px;
+  margin: 5px 0 0 10px;
+}
+
+.white-button {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: #FFF;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+  padding: 8px 24px;
+  margin: 10px 0 10px 0;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.white-button:hover {
+  background-color: #FFF;
+  color: #F87B5E;
+  border: 2px solid #FFF;
+  padding: 8px 24px;
+  margin: 10px 0 10px 0;
+}
+
+.coral-button {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background-color: #F87B5E;
+  color: #FFF;
+  border: 2px solid #F87B5E;
+  border-radius: 4px;
+  padding: 8px 24px;
+  margin: 10px 0 10px 0;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.coral-button:hover {
+  background-color: transparent;
+  color: #F87B5E;
+  border: 2px solid #F87B5E;
+  padding: 8px 24px;
+  margin: 10px 0 10px 0;
+}
+
+/* ----------------------------------------
+Section Formatting
+------------------------------------------- */
+
+.grid-wrap-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+.grid-wrap-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-wrap-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#advertising {
+  background-color: #221A45;
+  padding: 40px 0px 40px 0px;
+}
+
+#advertising p{
+  color: #fff;
+}
+
+#tech {
+  background-color: #EDEDF0;
+  padding: 40px 0px 40px 0px;
+}
+
+#about {
+  background-color: #F87B5E;
+  padding: 40px 0px 40px 0px;
+}
+
+#about h2 {
+  color: #fff;
+}
+
+.blog a {
+  text-decoration: none;
+}
+
+.blog h3 {
+  color: #221A45;
+}
+
+.blog p {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  display: inline-block;
+}
+
+.blog-1 {
+  background-image: url(../images/dunes.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 70px;
+  min-height: 250px;
+}
+
+.blog-1:hover {
+  background-color: #F87B5E;
+  opacity: .9;
+  padding: 70px;
+  min-height: 250px;
+}
+
+.blog-2 {
+  background-image: url(../images/ocean.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 70px;
+  min-height: 250px;
+}
+
+.blog-2:hover {
+  background-color: #F87B5E;
+  opacity: .9;
+  padding: 70px;
+  min-height: 250px;
+}
+
+.blog-3 {
+  background-image: url(../images/red-shirt.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 70px;
+  min-height: 250px;
+}
+
+.blog-3:hover {
+  background-color: #F87B5E;
+  opacity: .9;
+  padding: 70px;
+  min-height: 250px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+  background: #fff;
+  font-size: 22px;
+  line-height: 28px;
+  float: right;
+  text-align: center;
+  padding: 50px;
+}
+
+.nav-mobile a {
+  color: #F87B5E;
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  /*color: #221A45;*/
+}
+
+.main-nav a:hover {
+  border-bottom: 2px solid #66DECA;
+  margin: 0px 10px 0px 10px;
+}
+
+/* ----------------------------------------
+Modal Styles
+------------------------------------------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fff;
+    position: relative;
+    padding: 30px;
+    border: 1px solid #66666C;
+    width: 60%; /* Could be more or less, depending on screen size */
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+}
+
+form {
+  padding: 10px;
+}
+
+input {
+  display: inline-block;
+  text-align: center;
+  padding: 8px;
+}
+
+input, textarea {
+  /*update border, padding, font-size, display*/
+  border: .5px solid #66666C;
+  background-color: #EDEDF0;
+  font-size: 16px;
+  text-align: left;
+  margin: 10px;
+}
+
+/* The Close Button */
+.close {
+    color: #66666C;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #66666C;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------
+Responsive
+------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+
+  .grid-wrap-4{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section {
+    padding: 0 10px 0 20px;
+  }
+
+@media screen and (max-width: 800px) {
+  .hamburger {
+    display: block;
+    color: #fff;
+    border-bottom: none;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav a:hover {
+    border-bottom: none;
+  }
+
+  .grid-wrap-3 {
+    grid-template-columns: 100%;
+  }
+
+  .grid-wrap-4{
+    grid-template-columns: 100%;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFF;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 34px;
+    line-height: 43px;
+    color: #F87B5E;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #7E47FF;
+  }
+}
