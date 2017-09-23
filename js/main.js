@@ -11,8 +11,16 @@ $('nav a').on('click', function(event) {
 
 // When hamburger is clicked, sidebar nave slides out //
 
-$('nav').on('click', function() {
-  $('#hamburger').slideToggle('nav-mobile');
+$('.hamburger').on('click', function (){
+  $('.main-nav').addClass('active')
+})
+
+$('.close-nav').on('click', function (){
+  $('.main-nav').removeClass('active')
+})
+
+$('.main-nav').on('click', function (){
+  $('.main-nav').removeClass('active')
 })
 
 //Modal appears when register button is clicked //
@@ -27,21 +35,28 @@ $('.close').on('click', function () {
 
 //Modal text disappears when submit is clicked and TY language appears //
 
+$('.submit').on('click', function () {
+  $('.modal-copy').hide();
+})
+
+$('.submit').on('click', function () {
+  $('.modal-thanks').show();
+})
+
 // When a user scrolls past the bottom of the header, nav bar changes to dark logo and text //
 
 $(window).on('scroll', function () {
 	var distanceScrolled = $(window).scrollTop();
-
-  console.log(distanceScrolled);
-
   if (distanceScrolled >= 80) {
 		$('.nav-info').addClass('scrolled');
-    $('white-logo').hide();
-    $('dark-logo').show();
+    $('.hamburger').addClass('ham-color')
+    $('.white-logo').hide();
+    $('.dark-logo').show();
 	} else {
 		$('.nav-info').removeClass('scrolled');
-    $('white-logo').show();
-    $('dark-logo').show();
+    $('.hamburger').removeClass('ham-color')
+    $('.white-logo').show();
+    $('.dark-logo').hide();
 	}
 
 });

@@ -10,19 +10,19 @@
 </head>
 <body>
   <div class="nav-info">
-    <img src="images/thorn-logo.png" alt="Thorn logo" align="left" class="white-logo">
-    <a href=""><i class="fa fa-bars fa-2x hamburger" aria-hidden="true"></i></a>
+    <a href="https://www.wearethorn.org/"><img src="images/thorn-logo.png" alt="Thorn logo" align="left" class="white-logo"></a>
+    <a href="https://www.wearethorn.org/"><img src="images/thorn-logo-dark.png" alt="Thorn logo" align="left" class="dark-logo"></a>
+    <a href="#" class="hamburger"><i class="fa fa-bars fa-2x hamburger" aria-hidden="true"></i></a>
     <nav class="main-nav">
-      <a href="#tech">Tech Hack</a>
-      <a href="#advertising">Advertising Hack</a>
-      <a href="#about">About Thorn</a>
-    </nav>
-  </div>
-  <div class="nav-mobile">
-    <nav>
-      <a href="#tech">Tech Hack</a>
-      <a href="#advertising">Advertising Hack</a>
-      <a href="#about">About Thorn</a>
+      <a href="#" class="close-nav">x</a>
+      <a class="nav-border" href="#tech">Tech Hack</a>
+      <a class="nav-border" href="#advertising">Advertising Hack</a>
+      <a class="nav-border" href="#about">About Thorn</a>
+      <div class="nav-social">
+        <i class="fa fa-facebook-official fa-2x" aria-hidden="true" href="https://www.facebook.com"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true" href="https://www.twitter.com"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="https://www.instagram.com"></i>
+      </div>
     </nav>
   </div>
   <header>
@@ -31,22 +31,28 @@
     <div class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h3>Thank you for your interest!</h3>
-        <p>Please complete to form below to RSVP to the Thorn Hackathon.</p>
-        <form action="">
-          <div>
-            <input type="text" placeholder=" First Name">
-            <input type="text" placeholder=" Last Name">
-          </div>
-          <div>
-            <input type="text" placeholder=" Company">
-            <input type="text" placeholder=" Job Title">
-          </div>
-          <div>
-            <input type="text" placeholder=" Email">
-          </div>
-        </form>
-        <button class="coral-button">Submit</button>
+        <div class='modal-copy'>
+          <h3>Thank you for your interest!</h3>
+          <p>Please complete to form below to RSVP to the Thorn Hackathon.</p>
+          <form action="">
+            <div>
+              <input type="text" placeholder=" First Name">
+              <input type="text" placeholder=" Last Name">
+            </div>
+            <div>
+              <input type="text" placeholder=" Company">
+              <input type="text" placeholder=" Job Title">
+            </div>
+            <div>
+              <input type="text" placeholder=" Email">
+            </div>
+          </form>
+          <button class="coral-button submit">Submit</button>
+        </div>
+        <div class="modal-thanks">
+          <h3>Thank you for registering!</h3>
+          <p>We will be in touch with more info soon.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -69,56 +75,66 @@
       <p>Gentrify austin taiyaki etsy. Cardigan lo-fi fingerstache in affogato, irony gastropub woke raclette food truck tbh cliche man braid. Cred pitchfork four dollar toast, kombucha semiotics enim swag dolore drinking vinegar minim messenger bag culpa next level.</p>
       <button class="coral-button" href="https://www.wearethorn.org/our-work-to-stop-child-sexual-exploitation/">Our Work</button>
     </section>
-  </div>
-  <div class="grid-wrap-4">
-    <div>
-      <h3>Sample Challenge #1</h3>
-      <p>Whatever lyft reprehenderit scenester, typewriter consequat stumptown jean shorts unicorn pop-up. Next level tacos art party chicharrones.</p>
-      <h4>Skills Needed:</h4>
-      <ul>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Sample Challenge #2</h3>
-      <p>Whatever lyft reprehenderit scenester, typewriter consequat stumptown jean shorts unicorn pop-up. Next level tacos art party chicharrones.</p>
-      <h4>Skills Needed:</h4>
-      <ul>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Sample Challenge #3</h3>
-      <p>Whatever lyft reprehenderit scenester, typewriter consequat stumptown jean shorts unicorn pop-up. Next level tacos art party chicharrones.</p>
-      <h4>Skills Needed:</h4>
-      <ul>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Sample Challenge #4</h3>
-      <p>Whatever lyft reprehenderit scenester, typewriter consequat stumptown jean shorts unicorn pop-up. Next level tacos art party chicharrones.</p>
-      <h4>Skills Needed:</h4>
-      <ul>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-        <li>SKILL</li>
-      </ul>
-    </div>
+    <section>
+      <div class="grid-wrap-2-1">
+        <h3>Sample Challenge #1</h3>
+      </div>
+      <div class="grid-wrap-2-1">
+        <div>
+          <p>Flexitarian waistcoat live-edge, fashion axe roof party copper mug unicorn chillwave food truck edison bulb woke post-ironic poke. Gastropub street art health goth fashion axe, pok pok enamel pin slow-carb affogato taxidermy disrupt organic helvetica. Ramps bushwick flexitarian distillery, vice poutine unicorn artisan. Kale chips put a bird on it slow-carb XOXO bespoke iPhone salvia butcher williamsburg church-key.</p>
+        </div>
+        <div>
+          <h4>Skills Needed:</h4>
+          <ul>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid-wrap-2-1">
+        <h3>Sample Challenge #2</h3>
+      </div>
+      <div class="grid-wrap-2-1">
+        <div>
+          <p>Flexitarian waistcoat live-edge, fashion axe roof party copper mug unicorn chillwave food truck edison bulb woke post-ironic poke. Gastropub street art health goth fashion axe, pok pok enamel pin slow-carb affogato taxidermy disrupt organic helvetica. Ramps bushwick flexitarian distillery, vice poutine unicorn artisan. Kale chips put a bird on it slow-carb XOXO bespoke iPhone salvia butcher williamsburg church-key.</p>
+        </div>
+        <div>
+          <h4>Skills Needed:</h4>
+          <ul>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid-wrap-2-1">
+        <h3>Sample Challenge #3</h3>
+      </div>
+      <div class="grid-wrap-2-1">
+        <div>
+          <p>Flexitarian waistcoat live-edge, fashion axe roof party copper mug unicorn chillwave food truck edison bulb woke post-ironic poke. Gastropub street art health goth fashion axe, pok pok enamel pin slow-carb affogato taxidermy disrupt organic helvetica. Ramps bushwick flexitarian distillery, vice poutine unicorn artisan. Kale chips put a bird on it slow-carb XOXO bespoke iPhone salvia butcher williamsburg church-key.</p>
+        </div>
+        <div>
+          <h4>Skills Needed:</h4>
+          <ul>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
   <div id="advertising">
     <section>
@@ -126,56 +142,66 @@
       <p>Gentrify austin taiyaki etsy. Cardigan lo-fi fingerstache in affogato, irony gastropub woke raclette food truck tbh cliche man braid. Cred pitchfork four dollar toast, kombucha semiotics enim swag dolore drinking vinegar minim messenger bag culpa next level.</p>
       <button class="coral-button" href="https://www.wearethorn.org/deterrence-prevent-child-sexual-abuse-imagery/">More on Deterrence</button>
     </section>
-    <div class="grid-wrap-4">
-      <div>
+    <section>
+      <div class="grid-wrap-2-1">
         <h3>Sample Challenge #1</h3>
-        <p>Whatever lyft reprehenderit scenester, typewriter consequat stumptown jean shorts unicorn pop-up. Next level tacos art party chicharrones.</p>
-        <h4>Skills Needed:</h4>
-        <ul>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-        </ul>
       </div>
-      <div>
+      <div class="grid-wrap-2-1">
+        <div>
+          <p>Flexitarian waistcoat live-edge, fashion axe roof party copper mug unicorn chillwave food truck edison bulb woke post-ironic poke. Gastropub street art health goth fashion axe, pok pok enamel pin slow-carb affogato taxidermy disrupt organic helvetica. Ramps bushwick flexitarian distillery, vice poutine unicorn artisan. Kale chips put a bird on it slow-carb XOXO bespoke iPhone salvia butcher williamsburg church-key.</p>
+        </div>
+        <div>
+          <h4>Skills Needed:</h4>
+          <ul>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid-wrap-2-1">
         <h3>Sample Challenge #2</h3>
-        <p>Whatever lyft reprehenderit scenester, typewriter consequat stumptown jean shorts unicorn pop-up. Next level tacos art party chicharrones.</p>
-        <h4>Skills Needed:</h4>
-        <ul>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-        </ul>
       </div>
-      <div>
+      <div class="grid-wrap-2-1">
+        <div>
+          <p>Flexitarian waistcoat live-edge, fashion axe roof party copper mug unicorn chillwave food truck edison bulb woke post-ironic poke. Gastropub street art health goth fashion axe, pok pok enamel pin slow-carb affogato taxidermy disrupt organic helvetica. Ramps bushwick flexitarian distillery, vice poutine unicorn artisan. Kale chips put a bird on it slow-carb XOXO bespoke iPhone salvia butcher williamsburg church-key.</p>
+        </div>
+        <div>
+          <h4>Skills Needed:</h4>
+          <ul>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid-wrap-2-1">
         <h3>Sample Challenge #3</h3>
-        <p>Whatever lyft reprehenderit scenester, typewriter consequat stumptown jean shorts unicorn pop-up. Next level tacos art party chicharrones.</p>
-        <h4>Skills Needed:</h4>
-        <ul>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-        </ul>
       </div>
-      <div>
-        <h3>Sample Challenge #4</h3>
-        <p>Whatever lyft reprehenderit scenester, typewriter consequat stumptown jean shorts unicorn pop-up. Next level tacos art party chicharrones.</p>
-        <h4>Skills Needed:</h4>
-        <ul>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-          <li>SKILL</li>
-        </ul>
+      <div class="grid-wrap-2-1">
+        <div>
+          <p>Flexitarian waistcoat live-edge, fashion axe roof party copper mug unicorn chillwave food truck edison bulb woke post-ironic poke. Gastropub street art health goth fashion axe, pok pok enamel pin slow-carb affogato taxidermy disrupt organic helvetica. Ramps bushwick flexitarian distillery, vice poutine unicorn artisan. Kale chips put a bird on it slow-carb XOXO bespoke iPhone salvia butcher williamsburg church-key.</p>
+        </div>
+        <div>
+          <h4>Skills Needed:</h4>
+          <ul>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+            <li>SKILL</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
   <div id="about">
     <section>
@@ -191,14 +217,13 @@
     </div></a>
     <a href="https://www.wearethorn.org/blog/child-safety-hackathon/" class="blog-2"><div >
       <p>Partner Hacks</p>
-      <h3>Facebook's annual child safety hackathon</h3>
+      <h3>Facebook's child safety hackathon</h3>
     </div></a>
     <a href="https://www.wearethorn.org/blog/why-i-donate-time-thorn/" class="blog-3"><div >
       <p>Volunteer Perspective</p>
-      <h3>Why I donate my time</h3>
+      <h3>Why I donate my time to Thorn</h3>
     </div></a>
   </div>
-
 </main>
 <footer class="grid-wrap-2">
   <div>
