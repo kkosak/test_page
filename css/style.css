@@ -332,6 +332,10 @@ Section Formatting
   color: #fff;
 }
 
+#about p {
+  color: #fff;
+}
+
 .blog a {
   text-decoration: none;
 }
